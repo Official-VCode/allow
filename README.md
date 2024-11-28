@@ -1,5 +1,5 @@
 <h2 align="center">
-AutoScript Premium By Virtual-Nwtwork
+AutoScript Premium By Virtual-Network
 <img src="https://img.shields.io/badge/Version-1.0.0-blue.svg"></h2>
 
 </p> 
