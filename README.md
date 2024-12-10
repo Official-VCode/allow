@@ -33,23 +33,6 @@ src="https://img.shields.io/badge/Service-Xray-success.svg">  <img src= "https:/
   sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl && wget https://raw.githubusercontent.com/Official-VCode/allow/main/choose.sh && chmod +x choose.sh && sed -i -e 's/\r$//' choose.sh && screen -S choose ./choose.sh 
 
   ```
- 
- ## Copy & paste 👇👇 to your VPS if ERROR (WG ONLY)
- ## Wireguard
-
-  ```html
-  echo "deb http://deb.debian.org/debian/ unstable main" >/etc/apt/sources.list.d/unstable.list
-printf 'Package: *\nPin: release a=unstable\nPin-Priority: 90\n' >/etc/apt/preferences.d/limit-unstable
-apt update
-apt install -y wireguard-tools iptables iptables-persistent
-apt install -y linux-headers-$(uname -r)
- 
-  ```
- 
-   ```html
-systemctl restart wg-quick@wg0
-
-  ```
 
 ## Info :
 
@@ -64,12 +47,12 @@ systemctl restart wg-quick@wg0
   - OpenSSH                 : 22
   - OpenVPN                 : TCP 1194, UDP 2200, SSL 110
   - Stunnel4                : 222, 777
-  - Dropbear                : 442, 109
+  - Dropbear                : 109, 143
   - OHP Dropbear            : 8585
   - OHP SSH                 : 8686
   - OHP OpenVPN             : 8787
-  - Websocket SSH(HTTP)     : 2081
-  - Websocket SSL(HTTPS)    : 222
+  - Websocket SSH(HTTP)     : 2082
+  - Websocket SSL(HTTPS)    : 2083
   - Websocket OpenVPN       : 2084
   - Squid Proxy             : 3128, 8080, 8000
   - Badvpn                  : 7100, 7200, 7300
